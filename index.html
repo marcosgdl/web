@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Marcos Enríquez | DEV&nbsp;&nbsp;👨‍💻</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <style>
+    /* Clase con los colores que cambiara */
+    .black {
+    background-color: #17212D;
+    color: aliceblue;
+    }
+
+/* Colores que tendra por default */
+    body {
+    background-color: white;
+    color: black;
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" style="height: 35px; line-height: 35px; ">
+        Marcos Enríquez | DEV
+    </div>
+    <div class="col-sm-6" style="text-align: right; height: 35px; line-height: 35px;">
+        <input type="button" id="btnInvertirColores" value="Invertir colores" />
+    </div>
+  </div>
+</div>
+
+<script>
+    // Evento click del boton
+    $("#btnInvertirColores").click(function(){
+    // Asigna o desasigna la clase black
+    $("body").toggleClass('black');
+    });
+</script>
+
+</body>
+</html>
