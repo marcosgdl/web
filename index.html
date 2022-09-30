@@ -50,9 +50,6 @@ body {
   padding: 20px;
 }
 
-
-/* HEADER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-header {
   background-color: transparent;
 }
@@ -82,9 +79,6 @@ body {
   border-radius: 5px;
 }
 
-
-/* MAIN
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-main {
   display: flex;
   flex-direction: column;
@@ -105,9 +99,6 @@ body {
   margin-top: 10px;
 }
 
-
-/* FOOTER
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
   display: flex;
   flex-direction: column-reverse;
@@ -123,9 +114,6 @@ body {
   margin-right: 20px;
 }
 
-
-/* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media screen and (min-width: 550px) {
   .page-header ul {
     width: auto;
@@ -162,13 +150,13 @@ body {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <style>
-    /* Clase con los colores que cambiara */
+    /* Colores que se cambian con el modo nocturno */
     .black {
     background-color: #17212D;
     color: aliceblue;
     }
 
-/* Colores que tendra por default */
+/* Colores que tiene la pagina de inicio por default */
     body {
     background-color: white;
     color: black;
@@ -212,9 +200,7 @@ body {
   </div>
 
   <script>
-    // Evento click del boton
     $("#btnInvertirColores").click(function(){
-    // Asigna o desasigna la clase black
     $("body").toggleClass('black');
     });
     
